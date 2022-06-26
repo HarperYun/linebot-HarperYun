@@ -3,6 +3,12 @@ import linebot from 'linebot'
 import goplay from './commands/play.js'
 // import test from './commands/test.js'
 
+// data.fetchData()
+
+// schedule.scheduleJob('0 0 * * * ', () => {
+//   data.fetchData()
+// })
+
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
   channelSecret: process.env.CHANNEL_SECRET,
