@@ -11,6 +11,17 @@ const bot = linebot({
 
 bot.on('message', async event => {
   if (event.message.type === 'text') {
+    switch (event.message.text) {
+      case '嘉義旅遊':
+        event.reply('嘉義很無聊欸你確定?')
+        break
+      case '確定':
+        event.reply('好吧，我已經勸過你了ʅ（´◔౪◔）ʃ')
+        break
+      case '取消':
+        event.reply('OK掰掰(⁰▿⁰)')
+        break
+    }
     if (event.message.text.startsWith('嘉義ㄉ ')) {
       goplay(event)
       // test(event)
@@ -24,6 +35,9 @@ bot.on('message', async event => {
 //     break
 //   case '確定':
 //     event.reply('好吧，我已經勸過你了ʅ（´◔౪◔）ʃ')
+//     break
+//   case '取消':
+//     event.reply('OK掰掰(⁰▿⁰)')
 //     break
 // }
 
