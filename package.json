@@ -1,0 +1,37 @@
+{
+  "type": "module",
+  "name": "linebot-harperyun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarperYun/linebot-HarperYun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarperYun/linebot-HarperYun/issues"
+  },
+  "homepage": "https://github.com/HarperYun/linebot-HarperYun#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "linebot": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "ngrok": "^4.3.1",
+    "nodemon": "^2.0.18"
+  }
+}
