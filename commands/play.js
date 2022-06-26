@@ -4,7 +4,7 @@ export default async (event) => {
   await axios.get('https://www.iyochiayi.com/api/v1/travels?lang=zh-TW').then((resp) => {
     // console.log(resp)
     const ddata = resp.data.data
-    const idx = ddata.findIndex(item => item.Name === event.message.text.slice(4))
+    const idx = ddata.findIndex(item => item.Name.includes(event.message.text.slice(4)))
     if (idx > -1) {
       event.reply([
         {
