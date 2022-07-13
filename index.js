@@ -28,7 +28,13 @@ bot.on('message', async event => {
         event.reply('OK掰掰(⁰▿⁰)')
         break
       case '使用說明':
-        event.reply('使用說明')
+        event.reply(
+          '使用說明',
+          '可輸入"嘉義旅遊"、"確定"、"取消"。',
+          '機器人搜尋功能請在關鍵字前面加上"嘉義ㄉ "（包含空格共四個字元）。',
+          '例如：嘉義ㄉ 彌陀寺',
+          '可搜尋各旅遊景點名稱，獲得簡介、電話、地址等資訊。'
+        )
         break
     }
     if (event.message.text.startsWith('嘉義ㄉ ')) {
