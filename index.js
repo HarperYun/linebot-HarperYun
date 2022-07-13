@@ -27,6 +27,9 @@ bot.on('message', async event => {
       case '取消':
         event.reply('OK掰掰(⁰▿⁰)')
         break
+      case '使用說明':
+        event.reply('使用說明')
+        break
     }
     if (event.message.text.startsWith('嘉義ㄉ ')) {
       goplay(event)
